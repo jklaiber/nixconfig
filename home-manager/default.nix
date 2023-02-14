@@ -42,9 +42,11 @@ in {
       # devops stuff
       operator-sdk
       kubernetes-helm
+      kubectx
       kind
       kubectl
       terraform
+      ansible
     ];
 
     sessionVariables = {

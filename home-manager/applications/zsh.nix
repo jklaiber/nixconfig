@@ -9,11 +9,14 @@
         sessionVariables  =  {
             EDITOR  =  "nvim";
             VISUAL  =  "nvim";
+            KUBECONFIG  =   "$HOME/.kube/config-ins-stud:$HOME/.kube/config-ins-int:$HOME/.kube/config-ins-ext:$HOME/.kube/config-ins-dev";
         };
 
         initExtraBeforeCompInit = ''
             eval "$(starship init zsh)"
             eval "$(thefuck --alias)"
+            zstyle :omz:plugins:ssh-agent agent-forwarding yes
+            source <(jumper completion zsh)
         '';
 
         oh-my-zsh  =  {
@@ -23,6 +26,7 @@
                 "git"
                 "docker"
                 "kubectl"
+                "ssh-agent"
             ];
         };
 
