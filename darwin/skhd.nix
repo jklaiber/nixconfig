@@ -2,8 +2,9 @@
     services.skhd.enable = true;
     services.skhd.skhdConfig = ''
     # This configuration files is written to /etc/skhdrc instead of .config/skhd/skhdrc
+    # You can reload skhd with the following command: skhd --reload
     # Alternate closing command
-    lalt - q: skhd --key "cmd - w"
+    lalt - q: ${config.services.skhd.package}/bin/skhd --key "cmd - w"
 
     # applications
     lalt - return: open -n -a alacritty

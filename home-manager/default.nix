@@ -6,6 +6,7 @@ let
     ./applications/starship.nix
     ./applications/git.nix
     ./applications/zsh.nix
+    ./applications/nvim/nvim.nix
   ];
 
 in {
@@ -27,6 +28,7 @@ in {
       jq
       ranger
       ripgrep
+      sshpass # required for ansible
       comma # nix-shell wrapper
       thefuck # auto correct commands
       viddy # alternate watch command
