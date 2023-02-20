@@ -14,7 +14,6 @@
 	      disabled = false;
 	      style = "bold dimmed green";
 	    };
-	    terraform = { format = "[🏎💨 $version$workspace]($style) "; };
 	    username = {
 	      style_user = "purple bold";
 	      style_root = "red bold";

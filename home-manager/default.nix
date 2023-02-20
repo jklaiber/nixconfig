@@ -28,9 +28,13 @@ in {
       jq
       ranger
       ripgrep
+      pinentry
+      gnupg
+      hugo # go website generator
       sshpass # required for ansible
       comma # nix-shell wrapper
       thefuck # auto correct commands
+      watch
       viddy # alternate watch command
 
       # go utils

@@ -9,7 +9,9 @@
     };
     shells = with pkgs; [ bash zsh ];
     loginShell = pkgs.zsh;
-    systemPackages = [];
+    systemPackages = with pkgs; [
+      pinentry_mac
+    ];
     systemPath = [ "/opt/homebrew/bin" ];
     pathsToLink = [ "/Applications" ];
   };
