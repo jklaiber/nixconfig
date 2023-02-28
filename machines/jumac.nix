@@ -16,6 +16,17 @@
     pathsToLink = [ "/Applications" ];
   };
 
+  users = {
+    users = {
+      jklaiber = {
+        shell = pkgs.zsh;
+        name = "jklaiber";
+        description = "Julian Klaiber";
+        home = "/Users/jklaiber";
+      };
+    };
+  };
+
   programs = {
     zsh.enable = true;
   };

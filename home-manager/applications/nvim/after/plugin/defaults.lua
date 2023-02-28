@@ -1,8 +1,3 @@
--- Configuration for vscode
-if vim.g.vscode then
-  vim.cmd('source ../../vscode.vim')
-end
-
 -- Set jk to escape
 vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true })
 

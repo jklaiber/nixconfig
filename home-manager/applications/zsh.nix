@@ -13,6 +13,7 @@
         };
 
         initExtraBeforeCompInit = ''
+            export PATH="$HOME/.local/bin/:$PATH"
             eval "$(starship init zsh)"
             eval "$(thefuck --alias)"
             zstyle :omz:plugins:ssh-agent agent-forwarding yes

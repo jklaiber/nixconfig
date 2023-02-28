@@ -60,11 +60,6 @@ in {
       VISUAL = "nvim";
       GO11MODULE = "on";
     };
-
-    sessionPath = [
-      "$HOME/go/bin"
-      "$HOME/.local/bin"
-    ];
   };
 
   programs = {
@@ -74,8 +69,6 @@ in {
     go = {
         enable = true;
         package = pkgs.go_1_19;
-        goPath = "go";
-        goBin = "go/bin";
     };
   };
 }

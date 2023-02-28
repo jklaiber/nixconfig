@@ -14,6 +14,10 @@
 
     # layouts
     lalt - tab: yabai -m window --toggle split && yabai -m space --balance
+    #lalt + tab - s: yabai -m space --layout stack
+    #lalt + tab - b: yabai -m space --layout bsp 
+
+    #lalt - n: yabai -m window --focus stack.next
 
     # float / unfloat window
     lalt + shift - f: \
