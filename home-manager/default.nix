@@ -53,6 +53,7 @@ in {
       kubectl
       terraform
       ansible
+      kcat
     ];
 
     sessionVariables = {

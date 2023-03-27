@@ -10,7 +10,7 @@
 		    y = 4;
 		};
 		window.opacity = 0.92;
-		window.decorations = "none";
+		window.decorations = "buttonless";
 		window.title = "Alacritty";
 		font.normal = {
 			family = "JetBrainsMono Nerd Font Mono";

@@ -7,9 +7,12 @@
     casks = [
       "flameshot"
       "karabiner-elements"
-      "microsoft-teams"
     ];
-    taps = [];
-    brews = [];
+    taps = [
+      "koekeishiya/formulae" # yabai
+    ];
+    brews = [
+      "koekeishiya/formulae/skhd"
+    ];
   };
 }
