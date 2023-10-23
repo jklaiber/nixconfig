@@ -39,5 +39,13 @@ nix build .#darwinConfigurations.jumac.system
 - To update all packages, run `nix flake update && nix build .#darwinConfigurations.jumac.system`.
 - To edit any configuration file, modify the corresponding file in the `home-manager/` or `darwin/` directory and run `darwin-rebuild switch --flake ~/nixconfig`.
 
+### Update
+```bash
+nix-channel --update
+nix --extra-experimental-features "nix-command flakes" flake update
+nix --extra-experimental-features "nix-command flakes" build .#darwinConfigurations.jumac.system --impure
+darwin-rebuild switch --flake ~/nixconfig --show-trace --impure
+```
+
 ## Contributing
 If you have any suggestions, improvements or bugfixes, feel free to open a pull request. I appreciate any help and feedback!
