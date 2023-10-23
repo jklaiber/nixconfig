@@ -14,10 +14,7 @@
         lalt - b: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 
         # layouts
-        # lalt - tab: yabai -m window --toggle split && yabai -m space --balance
         lalt - tab: /Users/jklaiber/.local/bin/ywm space layout cycle
-        #lalt + tab - s: yabai -m space --layout stack
-        #lalt + tab - b: yabai -m space --layout bsp 
 
         #lalt - n: yabai -m window --focus stack.next
 
@@ -37,17 +34,6 @@
         lalt - 8: yabai -m space --switch s8
         lalt - 9: yabai -m space --switch s9
 
-        # move window to space
-        # lalt + shift - 1: python3 /Users/jklaiber/.config/yabai/scripts/yabaictl send-window-to-space s1
-        # lalt + shift - 2: python3 /Users/jklaiber/.config/yabai/scripts/yabaictl send-window-to-space s2
-        # lalt + shift - 3: python3 /Users/jklaiber/.config/yabai/scripts/yabaictl send-window-to-space s3
-        # lalt + shift - 4: python3 /Users/jklaiber/.config/yabai/scripts/yabaictl send-window-to-space s4
-        # lalt + shift - 5: python3 /Users/jklaiber/.config/yabai/scripts/yabaictl send-window-to-space s5
-        # lalt + shift - 6: python3 /Users/jklaiber/.config/yabai/scripts/yabaictl send-window-to-space s6
-        # lalt + shift - 7: python3 /Users/jklaiber/.config/yabai/scripts/yabaictl send-window-to-space s7
-        # lalt + shift - 8: python3 /Users/jklaiber/.config/yabai/scripts/yabaictl send-window-to-space s8
-        # lalt + shift - 9: python3 /Users/jklaiber/.config/yabai/scripts/yabaictl send-window-to-space s9
-
         lalt + shift - 1: /Users/jklaiber/.local/bin/ywm window send-to-space s1
         lalt + shift - 2: /Users/jklaiber/.local/bin/ywm window send-to-space s2
         lalt + shift - 3: /Users/jklaiber/.local/bin/ywm window send-to-space s3
@@ -61,15 +47,12 @@
         # focus windows
         lalt - j: /Users/jklaiber/.local/bin/ywm window cycle backward
         lalt - k: /Users/jklaiber/.local/bin/ywm window cycle forward
-        # lalt - j: yabai -m window --focus prev || yabai -m window --focus last
-        # lalt - k: yabai -m window --focus next || yabai -m window --focus first
 
         # swap windows
         lalt + shift - j: yabai -m window --swap prev || yabai -m window --swap last
         lalt + shift - k: yabai -m window --swap next || yabai -m window --swap first
 
         # focus monitor (0x2B = ,)
-        # lalt - 0x2B: python3 /Users/jklaiber/.config/yabai/scripts/yabaictl cycle-monitors
         lalt - 0x2B: /Users/jklaiber/.local/bin/ywm monitor cycle forward
 
         # window resizing
