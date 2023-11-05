@@ -51,7 +51,6 @@ in {
       kubectx
       kind
       kubectl
-      terraform
       ansible
       kcat
     ];
