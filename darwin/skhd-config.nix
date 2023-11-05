@@ -12,54 +12,6 @@
         lalt + cmd - f: open -n /Users/jklaiber/
         lalt - f: alacritty -e ranger .
         lalt - b: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
-
-        # layouts
-        lalt - tab: /Users/jklaiber/.local/bin/ywm space layout cycle
-
-        #lalt - n: yabai -m window --focus stack.next
-
-        # float / unfloat window
-        lalt + shift - f: \
-            yabai -m window --toggle float; \
-            yabai -m window --toggle border
-
-        # switch between spaces
-        lalt - 1: yabai -m space --switch s1
-        lalt - 2: yabai -m space --switch s2
-        lalt - 3: yabai -m space --switch s3
-        lalt - 4: yabai -m space --switch s4
-        lalt - 5: yabai -m space --switch s5
-        lalt - 6: yabai -m space --switch s6
-        lalt - 7: yabai -m space --switch s7
-        lalt - 8: yabai -m space --switch s8
-        lalt - 9: yabai -m space --switch s9
-
-        lalt + shift - 1: /Users/jklaiber/.local/bin/ywm window send-to-space s1
-        lalt + shift - 2: /Users/jklaiber/.local/bin/ywm window send-to-space s2
-        lalt + shift - 3: /Users/jklaiber/.local/bin/ywm window send-to-space s3
-        lalt + shift - 4: /Users/jklaiber/.local/bin/ywm window send-to-space s4
-        lalt + shift - 5: /Users/jklaiber/.local/bin/ywm window send-to-space s5
-        lalt + shift - 6: /Users/jklaiber/.local/bin/ywm window send-to-space s6
-        lalt + shift - 7: /Users/jklaiber/.local/bin/ywm window send-to-space s7
-        lalt + shift - 8: /Users/jklaiber/.local/bin/ywm window send-to-space s8
-        lalt + shift - 9: /Users/jklaiber/.local/bin/ywm window send-to-space s9
-
-        # focus windows
-        lalt - j: /Users/jklaiber/.local/bin/ywm window cycle backward
-        lalt - k: /Users/jklaiber/.local/bin/ywm window cycle forward
-
-        # swap windows
-        lalt + shift - j: yabai -m window --swap prev || yabai -m window --swap last
-        lalt + shift - k: yabai -m window --swap next || yabai -m window --swap first
-
-        # focus monitor (0x2B = ,)
-        lalt - 0x2B: /Users/jklaiber/.local/bin/ywm monitor cycle forward
-
-        # window resizing
-        lalt - h: yabai -m window --resize left:-20:0 ; yabai -m window --resize right:-30:0
-        lalt - l: yabai -m window --resize right:20:0 ; yabai -m window --resize left:30:0
-        lalt + lcmd - j: yabai -m window --resize bottom:0:20 ; yabai -m window --resize top:0:20
-        lalt + lcmd - k: yabai -m window --resize top:0:-20 ; yabai -m window --resize bottom:0:-20
         '';
     };
 }
