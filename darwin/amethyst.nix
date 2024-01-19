@@ -5,10 +5,13 @@
         text = ''
         # layouts - Ordered list of layouts to use by layout key (default tall, wide, fullscreen, and column).
         layouts:
+          # - bsp
+          # - widescreen-tall
           - tall
+          - wide
+          - column
           - fullscreen
           # - tall-right
-          # - wide
           # - two-pane
           # - middle-wide
           # - 3column-left
@@ -16,12 +19,9 @@
           # - 3column-right
           # - 4column-left
           # - 4column-right
-          - column
           # - row
           # - floating
-          # - widescreen-tall
           # - widescreen-tall-right
-          # - bsp
 
         # First mod (default option + shift).
         mod1:
@@ -52,13 +52,13 @@
 
         # Move to the next layout in the list.
         cycle-layout:
-          mod: mod1
+          mod: mod2
           key: space
 
         # Move to the previous layout in the list.
         cycle-layout-backward:
-          mod: mod2
-          key: space
+          mod: <NONE>
+          key: <NONE>
 
         # Shrink the main pane by a percentage of the screen dimension as defined by window-resize-step. Note that not all layouts respond to this command.
         shrink-main:
@@ -71,14 +71,14 @@
           key: l
 
         # Increase the number of windows in the main pane. Note that not all layouts respond to this command.
-        # increase-main:
-        #   mod: mod1
-        #   key: ','
+        increase-main:
+          mod: <NONE>
+          key: <NONE>
 
         # Decrease the number of windows in the main pane. Note that not all layouts respond to this command.
-        # decrease-main:
-        #   mod: mod1
-        #   key: '.'
+        decrease-main:
+          mod: <NONE>
+          key: <NONE>
 
         # General purpose command for custom layouts. Functionality is layout-dependent.
         # command1:
@@ -108,14 +108,14 @@
           key: j
 
         # Focus the main window in the list.
-        # focus-main:
-        #   mod: mod1
-        #   key: m
+        focus-main:
+          mod: <NONE>
+          key: <NONE>
 
         # Focus the next screen in the list going counter-clockwise.
-        # focus-screen-ccw:
-        #   mod: mod1
-        #   key: p
+        focus-screen-ccw:
+          mod: <NONE>
+          key: <NONE>
 
         # Focus the next screen in the list going clockwise.
         focus-screen-cw:
@@ -123,14 +123,14 @@
           key: ','
 
         # Move the currently focused window onto the next screen in the list going counter-clockwise.
-        # swap-screen-ccw:
-        #   mod: mod2
-        #   key: h
+        swap-screen-ccw:
+          mod: <NONE>
+          key: <NONE>
 
         # Move the currently focused window onto the next screen in the list going clockwise.
-        # swap-screen-cw:
-        #   mod: mod2
-        #   key: l
+        swap-screen-cw:
+          mod: <NONE>
+          key: <NONE>
 
         # Swap the position of the currently focused window with the next window in the list going counter-clockwise.
         swap-ccw:
@@ -143,9 +143,9 @@
           key: j
 
         # Swap the position of the currently focused window with the main window in the list.
-        # swap-main:
-        #   mod: mod1
-        #   key: enter
+        swap-main:
+          mod: <NONE>
+          key: <NONE>
 
         # Move focus to the n-th screen in the list; e.g., focus-screen-3 will move mouse focus to the 3rd screen. Note that the main window in the given screen will be focused.
         #focus-screen-n:
@@ -158,29 +158,61 @@
         #   mod: mod1
         #   key: u
         # Move the currently focused window to the n-th space; e.g., throw-space-3 will move the window to the 3rd space.
-        # throw-space-<screen-number>:
-        #   mod: mod1
-        #   key: i
+        throw-space-1:
+          mod: mod2
+          key: 1
+          
+        throw-space-2:
+          mod: mod2
+          key: 2
+          
+        throw-space-3:
+          mod: mod2
+          key: 3
+
+        throw-space-4:
+          mod: mod2
+          key: 4
+
+        throw-space-5:
+          mod: mod2
+          key: 5
+
+        throw-space-6:
+          mod: mod2
+          key: 6
+
+        throw-space-7:
+          mod: mod2
+          key: 7
+
+        throw-space-8:
+          mod: mod2
+          key: 8
+
+        throw-space-9:
+          mod: mod2
+          key: 9
 
         # Select tall layout
-        # select-tall-layout:
-        #   mod: mod1
-        #   key: a
+        select-tall-layout:
+          mod: <NONE>
+          key: <NONE>
 
         # Select wide layout
-        # select-wide-layout:
-        #   mod: mod1
-        #   key: s
+        select-wide-layout:
+          mod: <NONE>
+          key: <NONE>
 
         # Select fullscreen layout
-        # select-fullscreen-layout:
-        #   mod: mod1
-        #   key: d
+        select-fullscreen-layout:
+          mod: <NONE>
+          key: <NONE>
 
         # Select column layout
-        # select-column-layout:
-        #   mod: mod1
-        #   key: f
+        select-column-layout:
+          mod: <NONE>
+          key: <NONE>
 
         # Move the currently focused window to the space to the left.
         throw-space-left:
@@ -194,18 +226,18 @@
 
         # Toggle the floating state of the currently focused window; i.e., if it was floating make it tiled and if it was tiled make it floating.
         toggle-float:
-          mod: mod2
-          key: f
+          mod: <NONE>
+          key: <NONE>
 
         # Display the layout HUD with the current layout on each screen.
-        # display-current-layout:
-        #   mod: mod1
-        #   key: i
+        display-current-layout:
+          mod: <NONE>
+          key: <NONE>
 
         # Turn on or off tiling entirely.
-        # toggle-tiling:
-        #   mod: mod1
-        #   key: t
+        toggle-tiling:
+          mod: <NONE>
+          key: <NONE>
 
         # Rerun the current layout's algorithm.
         reevaluate-windows:
@@ -213,14 +245,14 @@
           key: z
 
         # Turn on or off focus-follows-mouse.
-        # toggle-focus-follows-mouse:
-        #   mod: mod2
-        #   key: x
+        toggle-focus-follows-mouse:
+          mod: <NONE>
+          key: <NONE>
 
         # Automatically quit and reopen Amethyst.
-        # relaunch-amethyst:
-        #   mod: mod2
-        #   key: z
+        relaunch-amethyst:
+          mod: <NONE>
+          key: <NONE>
 
         # disable screen padding on builtin display
         disable-padding-on-builtin-display: false

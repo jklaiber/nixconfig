@@ -52,7 +52,6 @@ in {
       kind
       kubectl
       ansible
-      kcat
     ];
 
     sessionVariables = {
@@ -68,7 +67,7 @@ in {
 
     go = {
         enable = true;
-        package = pkgs.go_1_19;
+        package = pkgs.go_1_21;
     };
   };
 }

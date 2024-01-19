@@ -12,6 +12,7 @@
         lalt + cmd - f: open -n /Users/jklaiber/
         lalt - f: alacritty -e ranger .
         lalt - b: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
+
         '';
     };
 }

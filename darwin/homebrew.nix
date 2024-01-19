@@ -7,6 +7,7 @@
     casks = [
       "flameshot"
       "karabiner-elements"
+      "spaceid"
     ];
     taps = [
       "koekeishiya/formulae" # yabai
