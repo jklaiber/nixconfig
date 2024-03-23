@@ -122,6 +122,22 @@
           mod: mod1
           key: ','
 
+        focus-screen-1:
+          mod: <NONE>
+          key: <NONE>
+
+        focus-screen-2:
+          mod: <NONE>
+          key: <NONE>
+          
+        focus-screen-3:
+          mod: <NONE>
+          key: <NONE>
+
+        focus-screen-4:
+          mod: <NONE>
+          key: <NONE>
+
         # Move the currently focused window onto the next screen in the list going counter-clockwise.
         swap-screen-ccw:
           mod: <NONE>

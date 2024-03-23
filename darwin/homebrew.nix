@@ -8,6 +8,7 @@
       "flameshot"
       "karabiner-elements"
       "spaceid"
+      "amethyst"
     ];
     taps = [
       "koekeishiya/formulae" # yabai
