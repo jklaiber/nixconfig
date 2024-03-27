@@ -11,27 +11,30 @@ This is my personal Nix configuration repository for macOS. It includes all the 
 ## Requirements
 
 - [Nix package manager](https://nixos.org/nix/)
+- [Homebrew](https://brew.sh/)
 - [Git](https://git-scm.com/)
 - [Nix Flakes](https://nixos.wiki/wiki/Flakes)
 
 ## Installation
+1. Install nix
+```bash
+curl -L https://nixos.org/nix/install | sh
 
-1. Clone this repository to your system:
+mkdir -p ~/.config/nix
+cat <<EOF > ~/.config/nix/nix.conf
+experimental-features = nix-command flakes
+EOF
 ```
-git clone https://github.com/jklaiber/nixconfig.git
+2. Install homebrew
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-2. Change to the cloned directory:
+3. Download the repository
+4. Restore the Nix configuration
+```bash
+nix build .#darwinConfigurations.<hostname>.system
+./result/sw/bin/darwin-rebuild switch --flake .
 ```
-cd nixconfig
-```
-3. Install the packages and configurations:
-```
-ls -s nixconfig .config/nixpkgs
-nix build .#darwinConfigurations.jumac.system
-./result/sw/bin/darwin-rebuild switch --flake ~/nixconfig
-```
-
-4. Restart your terminal to apply changes.
 
 ## Usage
 
