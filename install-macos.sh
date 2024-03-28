@@ -22,7 +22,7 @@ MAGENTA="$(tput setaf 5 2>/dev/null || printf '')"
 NO_COLOR="$(tput sgr0 2>/dev/null || printf '')"
 
 help() {
-   echo "Script to install jumper (a simple cli ssh manager)"
+   echo "Script to install and restore my nix configuration on macos"
    echo
    echo "Options:"
    echo "  -h  Print help"
